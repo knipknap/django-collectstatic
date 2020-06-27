@@ -18,6 +18,7 @@ jobs:
     - name: Start Deployment
       uses: knipknap/django-collectstatic@master
       with:
-        requirements: requirements.txt
-        manage_py_dir: src/
-        static_dir: src/static/
+        requirements: example/requirements.txt
+        manage_py_dir: example/
+        static_in_dir: example/static/
+        static_out_dir: example/static-out/
