@@ -1,0 +1,21 @@
+name: Django Collectstatic
+author: Samuel Abels <knipknap@gmail.com>
+description: A GitHub Action that supports Docker Swarm deployments
+inputs:
+  requirements:
+    description: Full path to requirements.txt (including filename)
+    required: true
+  manage_py_dir:
+    description: Directory to manage.py (relative to repository root)
+    required: true
+  static_dir:
+    description: Directory containing the static files (relative to repository root)
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
+
+branding:
+  icon: send
+  color: green
