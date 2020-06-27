@@ -1,6 +1,6 @@
 name: Django Collectstatic
 author: Samuel Abels <knipknap@gmail.com>
-description: A GitHub Action that supports Docker Swarm deployments
+description: A GitHub Action that collects staticfiles und minifies them
 inputs:
   requirements:
     description: Full path to requirements.txt (including filename)
