@@ -12,8 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-      with:
-        fetch-depth: 1
 
     - name: Start Deployment
       uses: knipknap/django-collectstatic@master
