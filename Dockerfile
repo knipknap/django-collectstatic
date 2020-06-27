@@ -14,4 +14,4 @@ RUN apt-get update \
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-ENTRYPOINT ["sh /docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/docker-entrypoint.sh"]
