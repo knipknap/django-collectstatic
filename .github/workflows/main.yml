@@ -18,5 +18,4 @@ jobs:
       with:
         requirements: example/requirements.txt
         manage_py_dir: example/
-        static_in_dir: example/static/
-        static_out_dir: example/static-out/
+        static_dir: example/static/
