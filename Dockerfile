@@ -12,6 +12,6 @@ RUN apt-get update \
     && apt-get -y install python3-pip minify \
     && rm -rf /var/lib/apt/lists/*
 
-COPY entrypoint.sh /entrypoint.sh
+COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
