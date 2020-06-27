@@ -8,7 +8,8 @@ LABEL 'com.github.actions.description'='Runs manage.py to collect static files'
 LABEL 'com.github.actions.icon'='send'
 LABEL 'com.github.actions.color'='green'
 
-RUN apk --no-cache add openssh-client
+RUN apt-get update \
+    && apt-get install minify
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
