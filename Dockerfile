@@ -1,4 +1,4 @@
-FROM python:3.8-buster
+FROM docker:stable
 
 LABEL 'name'='django-collectstatic'
 LABEL 'maintainer'='Samuel Abels <knipknap@gmail.com>'
@@ -9,7 +9,7 @@ LABEL 'com.github.actions.icon'='send'
 LABEL 'com.github.actions.color'='green'
 
 RUN apt-get update \
-    && apt-get -y install python3-pip minify \
+    && apt-get -y install python3 python3-pip minify \
     && rm -rf /var/lib/apt/lists/*
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
