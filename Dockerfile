@@ -1,4 +1,4 @@
-FROM docker:stable
+FROM python:3.8-buster
 
 LABEL 'name'='django-collectstatic'
 LABEL 'maintainer'='Samuel Abels <knipknap@gmail.com>'
