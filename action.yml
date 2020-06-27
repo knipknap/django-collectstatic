@@ -8,8 +8,13 @@ inputs:
   manage_py_dir:
     description: Directory to manage.py (relative to repository root)
     required: true
-  static_dir:
+  static_out_dir:
     description: Directory containing the static files (relative to repository root)
+    required: true
+  static_in_dir:
+    description: >
+      Directory into which the static files are written (relative to repository root).
+      MUST be different from source!
     required: true
 
 runs:
