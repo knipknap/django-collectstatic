@@ -17,8 +17,8 @@ jobs:
       uses: knipknap/django-collectstatic@master
       with:
         requirements: example/requirements.txt
-        manage_py_dir: example/
-        static_dir: example/static/
+        manage_py_dir: example
+        static_dir: example/static
 
     - name: Show result
       run: cat example/static/test.js
