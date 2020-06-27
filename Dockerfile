@@ -1,4 +1,4 @@
-FROM python:3.8-buster
+FROM python:3.6-buster
 
 LABEL 'name'='django-collectstatic'
 LABEL 'maintainer'='Samuel Abels <knipknap@gmail.com>'
