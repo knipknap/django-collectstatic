@@ -9,7 +9,8 @@ LABEL 'com.github.actions.icon'='send'
 LABEL 'com.github.actions.color'='green'
 
 RUN apt-get update \
-    && apt-get install python3-pip minify
+    && apt-get -y install python3-pip minify \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
