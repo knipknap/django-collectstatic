@@ -1,0 +1,23 @@
+name: Example usage
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+
+    - name: Start Deployment
+      uses: knipknap/django-collectstatic@master
+      with:
+        requirements: requirements.txt
+        manage_py_dir: src/
+        static_dir: src/static/
